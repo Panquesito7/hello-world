@@ -11,31 +11,30 @@ echo Hello world
 
 ## 📚 What is Bash?
 
-bash is a command interpreter, like the python interpreter, but with functions
-related to system operation. bash typically runs in a text window where the user types command that cause actions. bash can also read and execute commands from a file, called a shell script. Like most Unix shells, it supports filename globbing (wildcard matching), piping, here documents, command substitution, variables, and control structures for condition-testing and iteration. The keywords, syntax, dynamically scoped variables, and other basic features of the language are all copied from sh. Other features, e.g., history, are copied from csh and ksh. bash is a POSIX-compliant shell, but with a number of extensions. The shell's name is an acronym for Bourne Again Shell, a pun on the name of the Bourne shell that it replaces and the notion of being "born again".
+Bash is a command interpreter, like the Python interpreter, but with functions
+related to system operation. Bash typically runs in a text window where the user types command that cause actions. Bash can also read and execute commands from a file, called a shell script. Like most Unix shells, it supports filename globbing (wildcard matching), piping, here documents, command substitution, variables, and control structures for condition-testing and iteration. The keywords, syntax, dynamically scoped variables, and other basic features of the language are all copied from `sh`. Other features, such as history, are copied from `csh` and `ksh`. bash is a POSIX-compliant shell, but with a number of extensions. The shell's name is an acronym for Bourne Again Shell, a pun on the name of the Bourne shell that it replaces and the notion of being "born again".
 
 ## 🤔 Why use Bash?
 
 When you have to automate a build task for a project you can
 write a simple bash script to do it for you. This saved time
-for you. 
+for you.
 It is present in almost all linux servers and computer, and macos computers.  
-It can be accessed in windows by using git-bash or by installing a sub-system for windows, commonly called as "Windows subsystem for Linux"   
+It can be accessed in windows by using git-bash or by installing a sub-system for windows, commonly called as "Windows subsystem for Linux".
 
 You are not limited to doing DevOps operations with bash.\
 You can automate things on your computer!
 
 You can do some of the following stuff:
 
-- Create a backup and upload to a off-site backup location 
-- Customize application behavior.    
-- Doing complex text processing with tools like `awk`, `sed`, `ed` 
+- Create a backup and upload to a off-site backup location
+- Customize application behavior.
+- Doing complex text processing with tools like `awk`, `sed`, `ed`
 - Find files and text in files with `find`, `grep`  
   
-### 📝 Things needed to get started with Bash   
+### 📝 Things needed to get started with Bash
 
-You can use any text editor to write bash scripts.    
-
+You can use any text editor to write bash scripts.\
 You should know your way around these programs:
 
 - vim, nano (editing files)  
@@ -46,7 +45,8 @@ We always recommend learning these programs, because when you're writing Bash sc
 
 ## 🛠️ Setting up Bash development environment
 
-### 🖥️ Windows:  
+### 🖥️ Windows
+
 This is an official [guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to go you started with `wsl`: Windows subsystem for Linux
 
 Follow along for a overview of the process
@@ -55,36 +55,34 @@ Run these commands in PowerShell:
 
 1. Enable the Windows Subsystem for Linux:  
 
-    ```powershell
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart  
-    ```
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart  
+```
 
 2. Enable Virtual Machine feature:  
 
-    ```powershell
-    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart  
-    ```
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart  
+```
 
-3. Download and Install this update:  
+3. Download and install this update:  
 
-    Download this [WSL 2 Update](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) and install to update wsl to version 2
+- Download this [WSL 2 Update](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) and install to update wsl to version 2
 
 4. Set WSL 2 as your default version:  
 
-    ```powershell
-    wsl --set-default-version 2  
-    ```
+```powershell
+wsl --set-default-version 2  
+```
 
 5. Install Ubuntu from microsoft store:  
 
-    Go get [Ubuntu](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q) from the microsoft store.
-   
+- Go get [Ubuntu](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q) from the microsoft store.
 
 6. Set up password  
 
-    The first time you launch a newly installed Linux distribution, a console window will open and you'll be asked to wait for a minute or two for files to de-compress and be stored on your PC. All future launches should take less than a second.
-
-    You will then need to create a user account and password for your new Linux distribution.
+- The first time you launch a newly installed Linux distribution, a console window will open and you'll be asked to wait for a minute or two for files to de-compress and be stored on your PC. All future launches should take less than a second.
+You will then need to create a user account and password for your new Linux distribution.
 
 ### 🍎 macOS
 
@@ -98,12 +96,13 @@ brew install bash
 sudo apt install bash
 ```
 
-### 🐧 Arch 
+### 🐧 Arch
 
 ```sh
 sudo pacman -Syu bash
 ```
-### 🏃‍♂️ Bash scripts  
+
+### 🏃‍♂️ Bash scripts
 
 Put this script in a file named `test.sh`  
 
